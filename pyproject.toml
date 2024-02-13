@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "pw-hw-11"
+version = "0.1.0"
+description = ""
+authors = ["Weiss1985 <weiss1985@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.109.2"
+
+[tool.poetry.group.dev.dependencies]
+fastapi = "^0.109.0"
+uvicorn = {extras = ["standard"], version = "^0.27.0.post1"}
+SQLAlchemy = "^2.0.27"
+psycopg2 = "^2.9.9"
+alembic = "^1.13.1"
+pydantic-extra-types = "^2.5.0"
+phonenumbers = "^8.13.30"
+pydantic = "^2.6.1"
+Faker = "^23.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
